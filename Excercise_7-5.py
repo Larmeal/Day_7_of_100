@@ -19,10 +19,11 @@ display = []
 for _ in range(word_length):
     display += "_"
 
+print(f"{' '.join(display)}")
 # ขั้นตอนการ input ตัวอักษรที่เดาว่าตรงกับคำที่สุ่มมาไหม
 while not end_of_game:
     # แจ้งเตือนการใส่ตัวอักษรเดิม
-    guess = input("Guess a letter: ").lower()
+    guess = input("\nGuess a letter: ").lower()
     if guess in display:
             print(f"You've already guessed {guess}")
     # ตรวจสอบว่า ตักอักษรตรงกับตำแหน่งบ้างในคำที่สุ่มมา
